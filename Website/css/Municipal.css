@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.active {
+  background-color: green;
+  color: black;
+}
+.header {
+  background: url("images/kista.jpg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  padding: 20px;
+  text-align: center;
+}
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  color:white;
+  top: 18px;
+  left: 10px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column.side {
+  width: 25%;
+}
+
+.column.side img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.column.middle {
+  width: 50%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+table.middle {
+  font-family: arial, sans-serif;
+  font-size:small;
+  border-collapse: collapse;
+  width: 100%;
+  height: 300px;
+  table-layout: fit;
+}
+
+
+table.side {
+  font-family: arial, sans-serif;
+  font-size:small;
+  border-collapse: collapse;
+  width: 100%;
+  height: 300px;
+  table-layout: auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ADD8E6;
+}
+
+.flex_row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.flex_column {
+  flex: 33.33%;
+  padding: 5px;
+  text-align: justify;
+  width: [width of img];
+}
+
+address { 
+  display: block;
+  font-style: italic;
+  font-size:xx-small;
+} 
+
+.footer {
+   position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #b2ababd4;
+   color: white;
+   text-align: center;
+}
